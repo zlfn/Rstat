@@ -1,0 +1,222 @@
+#' @title Manual for Ch10. Functions
+#' @description Ch10. Inference on a Single Population
+#' @usage ch10.man(fn = 0)
+#' @param fn Function number, Default: 0
+#' @return None.
+#' @examples
+#' ch10.man()
+#' ch10.man(3:4)
+#' @export
+
+
+ch10.man <-
+  function(fn = 0) {
+    if (0 %in% fn) {
+      cat("[1] pmean.ci\t\tConfidence Interval for a Population Mean (known variance)\n")
+      cat("[2] meantest1.plot \tHypothesis Test for a Population Mean (known variance)\n")
+      cat("[3] pmean.ci2\t\tConfidence Interval for the Population Mean (unknown variance)\n")
+      cat("[4] meantest2.plot \tHypothesis Test for a Population Mean (unknown variance)\n")
+      cat("[5] prob.ci\t\tConfidence Interval for a Population Ratio\n")
+      cat("[6] bntest.plot\t\tPlot the Result of Exact Binomial Test\n")
+      cat("[7] bntest2.plot  \tPlot the Results of Three Types of Binomial Tests\n")
+      cat("[8] var1.ci\t\tConfidence Interval for a Population Variance\n")
+      cat("[9] var1.test\t\tHypothesis Test for a Population Variance\n")
+      cat("[10] chitest.plot   \tPlot the Result of the Chi-square Test\n")
+      cat("[11] cimean.sim    \tSimulate the Confidence Interval for a Population Mean\n")
+      cat("[12] civar.sim\t\tSimulate the Confidence Interval for a Population Variance\n")
+      cat("[13] ciprob.sim\t\tSimulate the Confidence Interval for a Population Ratio\n")
+      cat("[14] meanpower.plot \tPower Function of the Test for a Population Mean\n")
+      cat("[15] meanchar.plot  \tOperating Characteristic Curves of the Test for a Population Mean\n")
+    }
+    if (1 %in% fn) {
+      cat("[1] Confidence Interval for a Population Mean (known variance)\n")
+      cat("pmean.ci(xb, sig, n, alp=0.05, dig=4)\n")
+      cat("[Mandatory Input]--------------------------\n")
+      cat("xb\t Sample mean, or sample data\n")
+      cat("sig\t Population standard deviation\n")
+      cat("n\t Sample size (unnecessary when sample data are given)\n")
+      cat("[Optional Input]--------------------------\n")
+      cat("alp\t Level of significance (default=0.05)\n")
+      cat("dig\t Number of digits below the decimal point (default=4)\n")
+    }
+    if (2 %in% fn) {
+      cat("[2] Hypothesis Test for a Population Mean (known variance)\n")
+      cat("meantest1.plot(xb, mu0, sig, n, prng, side=\"two\", mt, dig=4, xlab=\"sample mean\")\n")
+      cat("[Mandatory Input]--------------------------\n")
+      cat("xb\t Sample mean, or sample data\n")
+      cat("mu0\t Population mean value under the null hypothesis\n")
+      cat("sig\t Population standard deviation\n")
+      cat("n\t Sample size (unnecessary when sample data are given)\n")
+      cat("[Optional Input]--------------------------\n")
+      cat("prng\t Range of x-axis\n")
+      cat("side \t Type of the alternative hypothesis (\"up\", \"low\", \"two\") (default=\"two\")\n")
+      cat("mt\t Graph title\n")
+      cat("dig\t Number of digits below the decimal point (default=4)\n")
+      cat("xlab\t Label of x-axis (default=\"Sample Mean\")\n")
+    }
+    if (3 %in% fn) {
+      cat("[3] Confidence Interval for the Population Mean (unknown variance)\n")
+      cat("pmean.ci2(xb, sig, n, alp=0.05, dig=4)\n")
+      cat("[Mandatory Input]--------------------------\n")
+      cat("xb\t Sample mean, or sample data\n")
+      cat("sig\t Sample standard deviation (unnecessary when sample data are given)\n")
+      cat("n\t Sample size (unnecessary when sample data are given)\n")
+      cat("[Optional Input]--------------------------\n")
+      cat("alp\t Level of significance (default=0.05)\n")
+      cat("dig\t Number of digits below the decimal point (default=4)\n\n")
+    }
+    if (4 %in% fn) {
+      cat("[4] Hypothesis Test for a Population Mean (unknown variance)\n")
+      cat("meantest2.plot(xb, mu0, sig, n, prng=c(-4,4), side=\"two\", mt, dig=4)\n")
+      cat("[Mandatory Input]--------------------------\n")
+      cat("xb\t Sample mean, or sample data\n")
+      cat("mu0\t Population mean value under the null hypothesis\n")
+      cat("sig\t Sample standard deviation (unnecessary when sample data are given)\n")
+      cat("n\t Sample size (unnecessary when sample data are given)\n")
+      cat("[Optional Input]--------------------------\n")
+      cat("prng\t Range of x-axis (default=c(-4,4))\n")
+      cat("side \t Type of the alternative hypothesis (\"up\", \"low\", \"two\") (default=\"two\")\n")
+      cat("mt\t Graph title\n")
+      cat("dig\t Number of digits below the decimal point (default=4)\n")
+    }
+    if (5 %in% fn) {
+      cat("[5] Confidence Interval for a Population Ratio\n")
+      cat("prob.ci(n, x, alp=0.05, dig=4)\n")
+      cat("[Mandatory Input]--------------------------\n")
+      cat("n\t Sample size\n")
+      cat("x\t Number of successes in a sample\n")
+      cat("[Optional Input]\n")
+      cat("alp\t Level of significance (default=0.05)\n")
+      cat("dig\t Number of digits below the decimal point (default=4)\n")
+    }
+    if (6 %in% fn) {
+      cat("[6] Plot the Result of Exact Binomial Test\n")
+      cat("bntest.plot(x, n, p0, alp=0.05, side=\"two\", dig=4, dcol)\n")
+      cat("[Mandatory Input]--------------------------\n")
+      cat("x\t Vector of number of successes\n")
+      cat("n\t Sample size\n")
+      cat("p0\t Population ratio value under the null hypothesis\n")
+      cat("[Optional Input]--------------------------\n")
+      cat("alp\t Level of significance (default=0.05)\n")
+      cat("side \t Type of the alternative hypothesis (\"up\", \"low\", \"two\") (default=\"two\")\n")
+      cat("dig\t Number of digits below the decimal point (default=4)\n")
+      cat("dcol\t Colors of the probability bars\n")
+    }
+    if (7 %in% fn) {
+      cat("[7] Plot the Results of Three Types of Binomial Tests\n")
+      cat("bntest2.plot(x, n, p0, alp=0.05, side=\"two\", dig=4)\n")
+      cat("[Mandatory Input]--------------------------\n")
+      cat("x\t Number of successes\n")
+      cat("n\t Sample size\n")
+      cat("p0\t Population ratio value under the null hypothesis\n")
+      cat("[Optional Input]\n")
+      cat("alp\t Level of significance (default=0.05)\n")
+      cat("side \t Type of the alternative hypothesis (\"up\", \"low\", \"two\") (default=\"two\")\n")
+      cat("dig\t Number of digits below the decimal point (default=4)\n")
+    }
+    if (8 %in% fn) {
+      cat("[8] Confidence Interval for a Population Variance\n")
+      cat("var1.ci(x, alp=0.05, dig=4)\n")
+      cat("[Mandatory Input]--------------------------\n")
+      cat("x\t Data vector\n")
+      cat("[Optional Input]--------------------------\n")
+      cat("alp\t Level of significance (default=0.05)\n")
+      cat("dig\t Number of digits below the decimal point (default=4)\n\n")
+    }
+    if (9 %in% fn) {
+      cat("[9] Hypothesis Test for a Population Variance\n")
+      cat("var1.test(x, n, var0, alp=0.05, side=\"two\", dig=4)\n")
+      cat("[Mandatory Input]--------------------------\n")
+      cat("x\t Data vector (or sample variance)\n")
+      cat("n\t Sample size (necessary when the sample variance is given)\n")
+      cat("var0\t Population variance value under the null hypothesis\n")
+      cat("[Optional Input]--------------------------\n")
+      cat("alp\t Level of significance (default=0.05)\n")
+      cat("side \t Type of the alternative hypothesis (\"up\", \"low\", \"two\") (default=\"two\")\n")
+      cat("dig\t Number of digits below the decimal point (default=4)\n")
+    }
+    if (10 %in% fn) {
+      cat("[10] Plot the Result of the Chi-square Test\n")
+      cat("chitest.plot(stat, df, prng, side=\"two\", mt, dig=4, ppt=20)\n")
+      cat("[Mandatory Input]--------------------------\n")
+      cat("stat\t Chi-square test statistic\n")
+      cat("df\t Degree of freedom\n")
+      cat("[Optional Input]--------------------------\n")
+      cat("prng\t Range of x-axis\n")
+      cat("side \t Type of the alternative hypothesis (\"up\", \"low\", \"two\") (default=\"two\")\n")
+      cat("mt\t Graph title\n")
+      cat("dig\t Number of digits below the decimal point (default=4)\n")
+      cat("ppt\t Number of plotting points in critical region\n")
+    }
+    if (11 %in% fn) {
+      cat("[11] Simulate the Confidence Interval for a Population Mean\n")
+      cat("cimean.sim(n, mu=0, sig=1, alp=0.05, N=100, seed=9857, dig=4, plot=TRUE)\n")
+      cat("[Mandatory Input]--------------------------\n")
+      cat("n\t Sample size\n")
+      cat("[Optional Input]--------------------------\n")
+      cat("mu\t Population mean value (default=0)\n")
+      cat("sig\t Population standard deviation (default=1)\n")
+      cat("alp\t Level of significance (default=0.05)\n")
+      cat("N\t Number of iterations (default=100)\n")
+      cat("seed\t Seed value for generating random numbers (default=9857)\n")
+      cat("dig\t Number of digits below the decimal point (default=4)\n")
+      cat("plot\t Logical value for plot (default=TRUE)\n")
+    }
+    if (12 %in% fn) {
+      cat("[12] Simulate the Confidence Interval for a Population Variance\n")
+      cat("civar.sim(n, mu=0, sig=1, alp=0.05, N=100, seed=9857, dig=4, plot=TRUE)\n")
+      cat("[Mandatory Input]--------------------------\n")
+      cat("n\t Sample size\n")
+      cat("[Optional Input]--------------------------\n")
+      cat("mu\t Population mean value (default=0)\n")
+      cat("sig\t Population standard deviation (default=1)\n")
+      cat("alp\t Level of significance (default=0.05)\n")
+      cat("N\t Number of iterations (default=100)\n")
+      cat("seed\t Seed value for generating random numbers (default=9857)\n")
+      cat("dig\t Number of digits below the decimal point (default=4)\n")
+      cat("plot\t Logical value for plot (default=TRUE)\n")
+    }
+    if (13 %in% fn) {
+      cat("[13] Simulate the Confidence Interval for a Population Ratio\n")
+      cat("ciprob.sim(n, p=0.5, alp=0.05, N=100, seed=9857, dig=4, plot=TRUE)\n")
+      cat("[Mandatory Input]--------------------------\n")
+      cat("n\t Sample size\n")
+      cat("[Optional Input]--------------------------\n")
+      cat("p\t Population ratio value (default=0.5)\n")
+      cat("alp\t Level of significance (default=0.05)\n")
+      cat("N\t Number of iterations (default=100)\n")
+      cat("seed\t Seed value for generating random numbers (default=9857)\n")
+      cat("dig\t Number of digits below the decimal point (default=4)\n")
+      cat("plot\t Logical value for plot (default=TRUE)\n")
+    }
+    if (14 %in% fn) {
+      cat("[14] Power Function of the Test for a Population Mean\n")
+      cat("meanpower.plot(mu0, mu1, sig, nv, alp=0.05, prng, side=\"two\", mt, dig=4)\n")
+      cat("[Mandatory Input]--------------------------\n")
+      cat("mu0\t Population mean value under the null hypothesis\n")
+      cat("mu1\t Vector of population mean values for which the power should be calculated\n")
+      cat("sig\t Population standard deviation\n")
+      cat("nv\t Sample size vector\n")
+      cat("[Optional Input]--------------------------\n")
+      cat("alp\t Level of significance (default=0.05)\n")
+      cat("prng\t Range of x-axis\n")
+      cat("side \t Type of the alternative hypothesis (\"up\", \"low\", \"two\") (default=\"two\")\n")
+      cat("mt\t Graph title\n")
+      cat("dig\t Number of digits below the decimal point (default=4)\n")
+    }
+    if (15 %in% fn) {
+      cat("[15] Operating Characteristic Curves of the Test for a Population Mean\n")
+      cat("meanchar.plot(mu0, mu1, sig, nv, alp=0.05, prng, side=\"two\", mt, dig=4)\n")
+      cat("[Mandatory Input]--------------------------\n")
+      cat("mu0\t Population mean value under the null hypothesis\n")
+      cat("mu1\t Vector of population mean values for which the power should be calculated\n")
+      cat("sig\t Population standard deviation\n")
+      cat("nv\t Sample size vector\n")
+      cat("[Optional Input]--------------------------\n")
+      cat("alp\t Level of significance (default=0.05)\n")
+      cat("prng\t Range of x-axis\n")
+      cat("side \t Type of the alternative hypothesis (\"up\", \"low\", \"two\") (default=\"two\")\n")
+      cat("mt\t Graph title\n")
+      cat("dig\t Number of digits below the decimal point (default=4)\n")
+    }
+  }

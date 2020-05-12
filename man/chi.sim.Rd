@@ -30,5 +30,5 @@ None.
 Simulation for the chi-square Distribution
 }
 \examples{
-chi.sim(ns=10, mu=100, sig=10)
+chi.sim(ns = 10, mu = 100, sig = 10)
 }

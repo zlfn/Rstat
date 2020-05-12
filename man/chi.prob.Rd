@@ -24,6 +24,7 @@ None.
 Cumulative Probability of the Chi-square Distribution
 }
 \examples{
-k= 1:10; nu= 5
+k <- 1:10
+nu <- 5
 chi.prob(nu, k)
 }

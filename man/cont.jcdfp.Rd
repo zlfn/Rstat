@@ -26,7 +26,7 @@ None.
 Joint CDF Plot of Two Continuous Random Variables
 }
 \examples{
-pdf = function(x, y) (x+y)*(x>0 & x<1)*(y>0 & y<1)
+pdf <- function(x, y) (x + y) * (x > 0 & x < 1) * (y > 0 & y < 1)
 library(scatterplot3d)
 cont.jcdfp(pdf, 0, 1, 0, 1)
 }

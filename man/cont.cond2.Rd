@@ -28,6 +28,6 @@ Conditional PDF
 Conditional Probability Distribution Plot of Two Continuous Random Variables
 }
 \examples{
-pdf = function(x, y) (x+y)*(x>=0 & x<=1)*(y>=0 & y<=1)
-cont.cond2(pdf, yc=0.1, xs=0:2/2, lo=-0.2, up=1.2)
+pdf <- function(x, y) (x + y) * (x >= 0 & x <= 1) * (y >= 0 & y <= 1)
+cont.cond2(pdf, yc = 0.1, xs = 0:2 / 2, lo = -0.2, up = 1.2)
 }

@@ -28,9 +28,9 @@ None.
 Plot the Result of the Chi-square Test
 }
 \examples{
-chi0 = var1.test(x=1.24, n=25, var0=0.8, side="up")
-chitest.plot(stat=chi0$stat, df=chi0$df, side="up")
-x = c(20.0, 21.5, 20.9, 19.8, 22.5, 20.3, 23.6, 18.0, 23.3, 17.8)
-res = var1.test(x=x, var0=2, side="two")
-chitest.plot(stat=res$stat, df=res$df, side="two")
+chi0 <- var1.test(x = 1.24, n = 25, var0 = 0.8, side = "up")
+chitest.plot(stat = chi0$stat, df = chi0$df, side = "up")
+x <- c(20.0, 21.5, 20.9, 19.8, 22.5, 20.3, 23.6, 18.0, 23.3, 17.8)
+res <- var1.test(x = x, var0 = 2, side = "two")
+chitest.plot(stat = res$stat, df = res$df, side = "two")
 }

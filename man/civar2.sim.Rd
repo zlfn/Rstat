@@ -32,7 +32,6 @@ None.
 Simulate the Confidence Interval for a the ratio of Variances
 }
 \examples{
-civar2.sim(n1=25, n2=16, sig1=sqrt(8), sig2=2)
-civar2.sim(n1=25, n2=16, sig1=sqrt(8), sig2=2, N=10000, plot=F)
-
+civar2.sim(n1 = 25, n2 = 16, sig1 = sqrt(8), sig2 = 2)
+civar2.sim(n1 = 25, n2 = 16, sig1 = sqrt(8), sig2 = 2, N = 10000, plot = F)
 }

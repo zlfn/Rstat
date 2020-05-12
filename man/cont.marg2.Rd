@@ -28,6 +28,6 @@ Marginal PDF
 Marginal Probability Distribution Plot of Two Continuous Random Variables
 }
 \examples{
-pdf = function(x, y) 2/7*(2*x+5*y)*(x>=0 & x<=1)*(y>=0 & y<=1)
-cont.marg2(pdf, -0.2, 1.2, -0.2, 1.2, 0:2/2, 0:2/2)
+pdf <- function(x, y) 2 / 7 * (2 * x + 5 * y) * (x >= 0 & x <= 1) * (y >= 0 & y <= 1)
+cont.marg2(pdf, -0.2, 1.2, -0.2, 1.2, 0:2 / 2, 0:2 / 2)
 }

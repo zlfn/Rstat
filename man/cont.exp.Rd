@@ -32,6 +32,6 @@ list(ev=Ex, std=Dx)
 Expected Values of Continuous Random Variables
 }
 \examples{
-fx = function(x) dnorm(x,10,2)
-cont.exp(fx, 0, 20, prt=T, plot=T)
+fx <- function(x) dnorm(x, 10, 2)
+cont.exp(fx, 0, 20, prt = T, plot = T)
 }

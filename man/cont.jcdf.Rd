@@ -24,7 +24,7 @@ Cumulative probability
 Joint Cumulative Distribution Function of Two Continuous Random Variables
 }
 \examples{
-pdf = function(x, y) (x+y)*(x>0 & x<1)*(y>0 & y<1)
+pdf <- function(x, y) (x + y) * (x > 0 & x < 1) * (y > 0 & y < 1)
 cont.jcdf(pdf, Inf, Inf)
 cont.jcdf(pdf, 0.5, 0.5)
 }

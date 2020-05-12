@@ -30,7 +30,6 @@ None.
 Diagnose the Central Limit Theorem
 }
 \examples{
-clt.plot("exp", para=5, d=rep(0.4, 3))
-clt.plot("bin", para=0.1, ns=nv, d=c(1, 0.6, 0.5))
-
+clt.plot("exp", para = 5, d = rep(0.4, 3))
+clt.plot("bin", para = 0.1, ns = nv, d = c(1, 0.6, 0.5))
 }

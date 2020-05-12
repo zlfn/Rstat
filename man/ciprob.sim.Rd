@@ -26,7 +26,6 @@ None.
 Simulate the Confidence Interval for a Ratio
 }
 \examples{
-ciprob.sim(n=16, p=0.6, alp=0.05, N=100)
-ciprob.sim(n=16, p=0.6, alp=0.05, N=10000, plot=FALSE)
-
+ciprob.sim(n = 16, p = 0.6, alp = 0.05, N = 100)
+ciprob.sim(n = 16, p = 0.6, alp = 0.05, N = 10000, plot = FALSE)
 }

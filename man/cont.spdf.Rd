@@ -36,7 +36,7 @@ None.
 Plot (separately) the PDF of Continuous Random Variables
 }
 \examples{
-mu = c(0,0,2,2)
-sig=c(1,2,1,2)
-cont.spdf("norm", -7, 7, mu, sig, xp=mu)
+mu <- c(0, 0, 2, 2)
+sig <- c(1, 2, 1, 2)
+cont.spdf("norm", -7, 7, mu, sig, xp = mu)
 }

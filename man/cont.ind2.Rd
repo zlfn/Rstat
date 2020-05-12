@@ -30,6 +30,6 @@ Joint PDF
 Determine Independence of Two Continuous Random Variables
 }
 \examples{
-pdf = function(x, y) (x+y)*(x>=0 & x<=1)*(y>=0 & y<=1)
-cont.ind2(pdf, lo1=0, up1=1, lo2=0, up2=1)
+pdf <- function(x, y) (x + y) * (x >= 0 & x <= 1) * (y >= 0 & y <= 1)
+cont.ind2(pdf, lo1 = 0, up1 = 1, lo2 = 0, up2 = 1)
 }

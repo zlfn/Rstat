@@ -30,7 +30,7 @@ None.
 Multiple Scatter Plots from Lists of Bivariate Data
 }
 \examples{
-xd = list(cbind(iris[[1]], iris[[2]]), cbind(iris[[3]], iris[[4]]))
-spec = c("Sepal", "Petal")
-corr.mplot(X=xd, item=spec, xl="Length", yl="Width")
+xd <- list(cbind(iris[[1]], iris[[2]]), cbind(iris[[3]], iris[[4]]))
+spec <- c("Sepal", "Petal")
+corr.mplot(X = xd, item = spec, xl = "Length", yl = "Width")
 }

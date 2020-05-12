@@ -28,7 +28,6 @@ None.
 Simulate the Confidence Interval for a Population Mean
 }
 \examples{
-cimean.sim(n=16, mu=10, sig=2)
-cimean.sim(n=16, mu=10, sig=2, N=10000, plot=FALSE)
-
+cimean.sim(n = 16, mu = 10, sig = 2)
+cimean.sim(n = 16, mu = 10, sig = 2, N = 10000, plot = FALSE)
 }

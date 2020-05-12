@@ -38,13 +38,13 @@ None.
 Multiple Regression Analysis
 }
 \examples{
-mpg = mtcars$mpg
-xd = mtcars[4:6]
+mpg <- mtcars$mpg
+xd <- mtcars[4:6]
 attach(xd)
-form = mpg ~ hp + drat + wt
-corr.mreg(xd, mpg, form, step=0:3)
+form <- mpg ~ hp + drat + wt
+corr.mreg(xd, mpg, form, step = 0:3)
 
-form2 = mpg ~ hp * drat + wt
-xd2 = data.frame(hp, drat, wt, hpd= hp * drat)
-corr.mreg(xd, mpg, form, xd2, form2, step=4:5)
+form2 <- mpg ~ hp * drat + wt
+xd2 <- data.frame(hp, drat, wt, hpd = hp * drat)
+corr.mreg(xd, mpg, form, xd2, form2, step = 4:5)
 }

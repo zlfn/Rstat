@@ -28,13 +28,13 @@ None.
 Correlation Coefficients and Scatter Plots of Discrete Random variables
 }
 \examples{
-S = rolldie2(4)
-item = c("Sum", "Max", "Min", "Range")
-X = list()
-X[[1]] = apply(S, 1, sum)
-X[[2]] = apply(S, 1, max)
-X[[3]] = apply(S, 1, min)
-X[[4]] = X[[2]]-X[[3]]
-Mt = paste("PDF of", item, "in 4 Dice")
-corr.plot(X, Mt, item, pprt=T, plot=T)
+S <- rolldie2(4)
+item <- c("Sum", "Max", "Min", "Range")
+X <- list()
+X[[1]] <- apply(S, 1, sum)
+X[[2]] <- apply(S, 1, max)
+X[[3]] <- apply(S, 1, min)
+X[[4]] <- X[[2]] - X[[3]]
+Mt <- paste("PDF of", item, "in 4 Dice")
+corr.plot(X, Mt, item, pprt = T, plot = T)
 }

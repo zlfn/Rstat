@@ -40,13 +40,14 @@ None.
 PDF and CDF for Continuous Random Variables
 }
 \examples{
-lamb = 1:5
-cont.mpdf("exp", 0, 3, para=lamb, ymax=5)
+lamb <- 1:5
+cont.mpdf("exp", 0, 3, para = lamb, ymax = 5)
 
-alp = c(0.5, 1, 2, 3); rate = 1
-cont.mpdf("gamma", 0, 8, para=alp, para2=rate, ymax=1.2)
+alp <- c(0.5, 1, 2, 3)
+rate <- 1
+cont.mpdf("gamma", 0, 8, para = alp, para2 = rate, ymax = 1.2)
 
-th = 1; alp = c(0.5, 1, 2, 3)
-cont.mpdf("weibull", 0, 5, para=alp, para2=th, ymax=1.2)
-
+th <- 1
+alp <- c(0.5, 1, 2, 3)
+cont.mpdf("weibull", 0, 5, para = alp, para2 = th, ymax = 1.2)
 }

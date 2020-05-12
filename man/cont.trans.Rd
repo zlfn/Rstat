@@ -32,10 +32,10 @@ None.
 Transformed PDF of a Continuous Random Variable
 }
 \examples{
-fx = function(x) 2*x*(x>=0 & x<=1)
-ty = function(x) 10*x - 4
-tw = function(x) -10*x + 4
-fy = function(y) fx((y+4)/10)/10
-fw = function(w) fx((-w+4)/10)/10
-cont.trans(fx, list(y=ty, w=tw), list(fy, fw), 0.3, 0.7, plot=TRUE, cex=1.3)
+fx <- function(x) 2 * x * (x >= 0 & x <= 1)
+ty <- function(x) 10 * x - 4
+tw <- function(x) -10 * x + 4
+fy <- function(y) fx((y + 4) / 10) / 10
+fw <- function(w) fx((-w + 4) / 10) / 10
+cont.trans(fx, list(y = ty, w = tw), list(fy, fw), 0.3, 0.7, plot = TRUE, cex = 1.3)
 }

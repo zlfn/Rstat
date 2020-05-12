@@ -28,7 +28,6 @@ None.
 Cumulative Distribution Function of a Continuous Random Variable
 }
 \examples{
-pdf = function(x) 2 * exp(-2*x)*(x>0)
-cont.cdf(pdf, low=-1, up=3, xs=c((1:5)*0.2, 2))
-
+pdf <- function(x) 2 * exp(-2 * x) * (x > 0)
+cont.cdf(pdf, low = -1, up = 3, xs = c((1:5) * 0.2, 2))
 }

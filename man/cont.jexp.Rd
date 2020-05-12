@@ -28,6 +28,6 @@ list(Ex=E(X), Dx=D(X), Ey=E(Y), Dy=D(Y), Vxy=Cov(X,Y), Cxy=Corr(X,Y))
 Joint pdf and Expected Value of Two Continuous Random Variables
 }
 \examples{
-pdf = function(x, y) 0.5*(x+3*y)*(x>0 & x<1)*(y>0 & y<1)
-cont.jexp(pdf, prt="cor")
+pdf <- function(x, y) 0.5 * (x + 3 * y) * (x > 0 & x < 1) * (y > 0 & y < 1)
+cont.jexp(pdf, prt = "cor")
 }

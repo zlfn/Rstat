@@ -29,12 +29,12 @@ Plot the Result of the Chi-square Test
 }
 \examples{
 # Goodness-of-fit Test
-x = c(31,26,22,18,13,10)
-(ct = chisq.test(x))
-chitest.plot2(stat=ct$stat, df=ct$para, side="up")
+x <- c(31, 26, 22, 18, 13, 10)
+(ct <- chisq.test(x))
+chitest.plot2(stat = ct$stat, df = ct$para, side = "up")
 # Test of Homogeneity
-x = c(20,16,29,21,14,  14,22,26,25,13,  18,24,32,18, 8,  8,18,33,16,25)
-x = matrix(x, nrow=4, ncol=5, byrow=TRUE)
-(ct = chisq.test(x))
-chitest.plot2(stat=ct$stat, df=ct$para, side="up")
+x <- c(20, 16, 29, 21, 14, 14, 22, 26, 25, 13, 18, 24, 32, 18, 8, 8, 18, 33, 16, 25)
+x <- matrix(x, nrow = 4, ncol = 5, byrow = TRUE)
+(ct <- chisq.test(x))
+chitest.plot2(stat = ct$stat, df = ct$para, side = "up")
 }

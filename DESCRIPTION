@@ -1,12 +1,13 @@
 Package: Rstat
-Title: Statistics Module
-Version: 0.0.0.1
-Authors@R: 
-    person(given = "Jinhwan",
-           family = "Kim",
-           role = c("aut", "cre"),
-           email = "hwanistic@gmail.com")
+Title: Basic Statistical Methods in R
+Version: 4.0
+Authors@R: c(
+      person(given = "Jinhwan", family = "Kim", role = c("aut", "cre", "ctb"), email = "hwanistic@gmail.com"),
+      person("T.J.", "Lim", role = c("aut", "cph"), email = "tjlim@ssu.ac.kr")
+    )
 Description: Re-mastered version of Rstat package.
+URL: https://github.com/jhk0530/Rstat
+BugReports: https://github.com/jhk0530/Rstat/issues
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true

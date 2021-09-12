@@ -1,6 +1,6 @@
 Package: Rstat
 Title: Basic Statistical Methods in R
-Version: 4.0
+Version: 4.1
 Authors@R: c(
       person(given = "Jinhwan", family = "Kim", role = c("aut", "cre", "ctb"), email = "hwanistic@gmail.com"),
       person("T.J.", "Lim", role = c("aut", "cph"), email = "tjlim@ssu.ac.kr")
@@ -12,4 +12,4 @@ License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.1.0
+RoxygenNote: 7.1.2

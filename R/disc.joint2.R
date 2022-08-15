@@ -53,7 +53,7 @@ disc.joint2 <- function(X, Y, prt = TRUE, plot = FALSE, dig = 4, dig2 = 3,
     nc <- length(dp)
     for (k in 1:nc) dc[dc == dp[k]] <- nc + 1 - k
     dcol <- heat.colors(nc)
-    win.graph(7, 5)
+    dev.new(7, 5)
     s3d <- scatterplot3d(xa, ya, fxy,
       type = "h", main = paste0(
         "Joint Probability Distribution of ",

@@ -64,7 +64,7 @@ bntest.plot <- function(x, n, p0, alp = 0.05, side = "two", dig = 4,
   if (missing(dcol)) {
     dcol <- c(4, 2, "green4", "orange", "purple")
   }
-  win.graph(7, 5)
+  dev.new(7, 5)
   plot(xa, dbinom(xa, n, p0),
     type = "h", lwd = 7, col = grey(0.7),
     ylim = c(0, 1.1 * max(dbinom(xa, n, p0))), main = paste0(

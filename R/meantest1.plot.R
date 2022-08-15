@@ -45,7 +45,7 @@ meantest1.plot <- function(xb, mu0, sig, n, prng, side = "two", mt, dig = 4,
     )
   }
   xa <- seq(prng[1], prng[2], length.out = 101)
-  win.graph(7, 5)
+  dev.new(7, 5)
   plot(xa, dnorm(xa, mu0, se),
     type = "n", xlab = xlab,
     ylab = "pdf", ylim = c(-0.1, 1) * max(dnorm(

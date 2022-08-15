@@ -29,7 +29,7 @@ bayes.plot <-
     if (missing(cond)) {
       cond <- "F"
     }
-    win.graph(7, 4)
+    dev.new(7, 4)
     dum <- barplot(cbind(prior, post),
       col = dcol, main = "Prior Probability vs. Posterior Probability",
       horiz = T

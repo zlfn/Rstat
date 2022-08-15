@@ -93,7 +93,7 @@ runstest.plot <- function(x, n1, n2, alp = 0.05, side = "two", dig = 4,
     )
     ya <- Vdruns.exact(xa, n1, n2)
     ymax <- max(ya, dnorm(mu, mu, sqrt(vr)))
-    win.graph(7, 5)
+    dev.new(7, 5)
     plot(xa, ya,
       type = "h", lwd = 5, ylab = "f(r)",
       xlab = "Number of Runs", ylim = c(0, ymax),

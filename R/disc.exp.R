@@ -62,7 +62,7 @@ disc.exp <- function(xv, xf, mt, dig = 3, prt = TRUE, plot = FALSE, pos = "topri
     if (missing(mt)) {
       mt <- paste("Probability Distribution of", Xn)
     }
-    win.graph(7, 5)
+    dev.new(7, 5)
     x1 <- min(xv)
     x2 <- max(xv)
     xr <- x2 - x1

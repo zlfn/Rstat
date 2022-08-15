@@ -17,7 +17,7 @@
 #' Hope <- c("Sam", "Pub", "Exp", "Sal", "Etc")
 #' t1 <- as.table(x)
 #' dimnames(t1) <- list(Subject = Subject, Hope = Hope)
-#' win.graph(7, 6)
+#' dev.new(7, 6)
 #' mosaic2(tab = t1, mt = "Students' Favorite Subject and Hope")
 #' @export
 

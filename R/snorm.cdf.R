@@ -21,7 +21,7 @@ snorm.cdf <-
     x <- seq(lo, up, length = 100)
     lo1 <- lo - 0.12 * (up - lo)
     lo2 <- (lo1 * 2 + lo) / 3
-    win.graph(7, 6)
+    dev.new(7, 6)
     plot(x, pnorm(x), type = "n", main = mt, ylim = c(
       -0.05,
       1

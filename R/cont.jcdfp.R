@@ -24,7 +24,7 @@ cont.jcdfp <- function(FUN, lo1, up1, lo2, up2, mt) {
   ya <- seq(lo2, up2, length = 20)
   xa <- rep(xa, 20)
   ya <- rep(ya, each = 20)
-  win.graph(7, 5)
+  dev.new(7, 5)
   s3d <- scatterplot3d(xa, ya, VFxy(xa, ya),
     highlight.3d = TRUE,
     main = "Joint Cumulative Distribution of X and Y",

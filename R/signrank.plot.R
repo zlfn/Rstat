@@ -68,7 +68,7 @@ signrank.plot <-
     pdf <- dsignrank(xa, n)
     ymax <- max(pdf) * 1.05
     ymin <- -0.1 * max(pdf)
-    win.graph(7, 5)
+    dev.new(7, 5)
     plot(xa, pdf,
       type = "n", xlab = xlab, ylab = "f(u)",
       ylim = c(ymin, ymax), main = paste0(

@@ -28,7 +28,7 @@ disc.cdf <- function(xv, xp, mt, cpt = 1.2, cex = 1, dig = 3) {
       xname
     )
   }
-  win.graph(7, 5)
+  dev.new(7, 5)
   plot(sf,
     main = mt, verticals = F, pch = 19, lwd = 2, cex = 1.2,
     col = 2, xlab = "x", ylab = "F(x)"

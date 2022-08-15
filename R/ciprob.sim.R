@@ -28,7 +28,7 @@ ciprob.sim <- function(n, p = 0.5, alp = 0.05, N = 100, seed = 9857, dig = 4,
   ucl <- pmin(1, xp + zv * sqrt(xv))
   ci <- cbind(lcl, xp, ucl)
   if (plot) {
-    win.graph(7, 4)
+    dev.new(7, 4)
     plot(ir, ci[, 2],
       type = "p", pch = 19, cex = 0.6,
       col = 1, ylim = c(min(ci), max(ci)), main = "Confidence Intervals for a Population Ratio",

@@ -95,7 +95,7 @@ corr.plot <- function(X, Mt, item, dig = 4, prt = TRUE, pprt = FALSE, plot = FAL
     nr <- ceiling(nv / nc)
     h <- ifelse(nr > 2, 9, 6)
     w <- ifelse(nc > 2, 9, 7)
-    win.graph(w, h)
+    dev.new(w, h)
     par(mfrow = c(nr, nc))
     for (k in 1:nv) {
       plot(Xp[[k]],
@@ -118,7 +118,7 @@ corr.plot <- function(X, Mt, item, dig = 4, prt = TRUE, pprt = FALSE, plot = FAL
     nr <- ceiling(np / nc)
     h <- ifelse(nr > 2, 9, 6)
     w <- ifelse(nc > 2, 9, 7)
-    win.graph(w, h)
+    dev.new(w, h)
     par(mfrow = c(nr, nc))
     for (k in 1:(nv - 1)) {
       for (m in (k + 1):nv) {

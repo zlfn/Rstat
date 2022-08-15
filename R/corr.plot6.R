@@ -34,7 +34,7 @@ corr.plot6 <- function(m1 = 60, s1 = 10, m2 = 60, s2 = 10, r = 0.7, r2 = 0.8,
   d81 <- rbivariate(m1, s1, m2 - 1.5 * s2, s2, r, n / 2)
   d82 <- rbivariate(m1, s1, m2 + 1.5 * s2, s2, -r2, n / 2)
   d8 <- list(c(d81[[1]], d82[[1]]), c(d81[[2]], d82[[2]]))
-  win.graph(9, 6)
+  dev.new(9, 6)
   par(mfrow = c(2, 3))
   plot(d1[[1]], d1[[2]],
     pch = 19, cex = 1.2, xlab = "(a) Positive Correlation",

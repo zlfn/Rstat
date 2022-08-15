@@ -29,7 +29,7 @@ chitest.plot2 <- function(stat, df, alp = 0.05, side = "two", pup = 0.999,
   prng <- c(0, qchisq(pup, df))
   xa <- seq(prng[1], prng[2], length.out = 101)
   ymax <- max(dchisq(xa, df))
-  win.graph(7, 5)
+  dev.new(7, 5)
   plot(xa, dchisq(xa, df),
     type = "n", xlab = "Chi-square Statistic",
     ylab = "pdf", ylim = c(0, ymax * 1.1), main = bquote(bold("Distribution of the Chi-square Statistic under H0: ") ~

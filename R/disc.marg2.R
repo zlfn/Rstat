@@ -49,7 +49,7 @@ disc.marg2 <- function(tabXY, Xn, Yn, prt = TRUE, plot = FALSE, dig = 5, dig2 = 
     nx <- length(xa)
     ya <- as.numeric(names(tabY))
     ny <- length(ya)
-    win.graph(7, 6)
+    dev.new(7, 6)
     par(mfrow = c(2, 1))
     par(mar = c(3, 4, 4, 2))
     plot(xa, ptabX,

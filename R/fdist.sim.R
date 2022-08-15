@@ -32,7 +32,7 @@ fdist.sim <- function(nu1 = 5, nu2 = 5, N = 10000, ng = 250, seed = 9857,
     2) / nu1 / (nu2 - 2)^2 / (nu2 - 4)), dig), ifelse(nu2 > 2,
     Inf, NA
   ))
-  win.graph(7, 5)
+  dev.new(7, 5)
   hist(fs1,
     breaks = ng, prob = T, xlim = c(0, xmax), col = 7,
     main = bquote("(" ~ chi[.(nu1)]^2 ~ "/" ~

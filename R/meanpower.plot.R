@@ -67,7 +67,7 @@ meanpower.plot <- function(mu0, mu1, sig, nv, alp = 0.05, prng, side = "two",
   names(power) <- nv
   print(round(power, dig))
   xa <- seq(prng[1], prng[2], length.out = 100)
-  win.graph(7, 5)
+  dev.new(7, 5)
   if (nn > 5) {
     dcol <- rainbow(nn)
   }

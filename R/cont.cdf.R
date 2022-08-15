@@ -21,7 +21,7 @@ cont.cdf <- function(FUN, low, up, xs, mt, dig = 4, pos = "bottomright") {
   Fx <- function(x) integrate(FUN, low, x)$value
   VFx <- Vectorize(Fx, "x")
   xrange <- seq(low, up, length = 100)
-  win.graph(7, 5)
+  dev.new(7, 5)
   plot(xrange, VFx(xrange),
     type = "l", lwd = 3, main = mt,
     col = 2, xlab = "x", ylab = "F(x)"

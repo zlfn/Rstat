@@ -33,7 +33,7 @@ unstable.hist <-
     db <- c(x2, y1)
     dc <- x1[(x1 > b) | (x1 < a)]
     dd <- x1[x1 >= c]
-    win.graph(7, 6)
+    dev.new(7, 6)
     par(mfrow = c(2, 2))
     hist(da,
       breaks = 15, main = "Type-A", xlab = "(a)",

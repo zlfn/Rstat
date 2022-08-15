@@ -32,7 +32,7 @@ hyp.sample <- function(npop, ndef, nsamp, cex = 0.8, dig = 4) {
   DX <- sqrt(VX)
   Xmin <- min(X.val) - 1
   Xmax <- max(X.val) + 1
-  win.graph(7, 5)
+  dev.new(7, 5)
   plot(X.val, fx,
     type = "h", col = "red", lwd = 4,
     xlim = c(Xmin, Xmax), ylim = c(0, max(fx) + 0.05), main = paste0(

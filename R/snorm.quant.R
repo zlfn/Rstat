@@ -33,7 +33,7 @@ snorm.quant <-
     ymax <- max(dnorm(x))
     nzp <- min(4, ceiling(length(pv2) / 4))
     y1 <- 0.1 * nzp * ymax
-    win.graph(7, 5)
+    dev.new(7, 5)
     plot(x, dnorm(x),
       type = "n", main = mt, ylim = c(
         -y1,

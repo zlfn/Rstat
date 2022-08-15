@@ -43,7 +43,7 @@ cont.cond2 <- function(FUN, xc, yc, xs, ys, lo, up) {
     yla <- "f(y|x)"
   }
   da <- seq(lo, up, length = 500)
-  win.graph(7, 4)
+  dev.new(7, 4)
   par(mar = c(3, 4, 4, 2))
   plot(da, cpdf(da), type = "l", main = paste0(
     "Conditional PDF of ",

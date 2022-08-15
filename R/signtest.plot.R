@@ -55,7 +55,7 @@ signtest.plot <-
     pdf <- dbinom(xa, n, 0.5)
     ymax <- max(pdf) * 1.05
     ymin <- -0.1 * max(pdf)
-    win.graph(7, 5)
+    dev.new(7, 5)
     plot(xa, pdf,
       type = "n", xlab = "Sign Statistic (positive sign)",
       ylab = "f(x)", ylim = c(ymin, ymax), main = paste0(

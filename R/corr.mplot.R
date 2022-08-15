@@ -37,7 +37,7 @@ corr.mplot <- function(X, item, xl, yl, mt, step = 1:4, alp = 0.05, dig = 4) {
     if (missing(yl)) {
       yl <- "group2"
     }
-    win.graph(w, h)
+    dev.new(w, h)
     par(mfrow = c(nr, nc))
     for (k in 1:nv) {
       plot(X[[k]][, 1], X[[k]][, 2],
@@ -101,7 +101,7 @@ corr.mplot <- function(X, item, xl, yl, mt, step = 1:4, alp = 0.05, dig = 4) {
   }
   if (5 %in% step) {
     cat("[Step 5] T-test plot ------------------------\n")
-    win.graph(w, h)
+    dev.new(w, h)
     par(mfrow = c(nr, nc))
     for (k in 1:nv) {
       mr <- max(c(3, abs(ct[[k]]$stat * 1.2)))

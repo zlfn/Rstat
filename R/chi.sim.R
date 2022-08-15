@@ -47,7 +47,7 @@ chi.sim <- function(ns, mu = 0, sig = 1, N = 10000, ng = 100, seed = 9857,
   print(round(cdf, dig))
   x1 <- 0
   x2 <- ceiling(max(cs))
-  win.graph(7, 5)
+  dev.new(7, 5)
   mt <- ifelse(muknow, "Distribution of Standardized Sum of Squares",
     "Dist. of Sum of Squares with Unknown Mean"
   )

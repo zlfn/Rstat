@@ -49,7 +49,7 @@ prob2test.plot <-
       " N(0," ~ .(round(se, 3))^2 ~ ")")
     }
     xa <- seq(prng[1], prng[2], length.out = 100)
-    win.graph(7, 5)
+    dev.new(7, 5)
     plot(xa, dnorm(xa, 0, se),
       type = "n", xlab = "Difference of Population Ratios",
       ylab = "pdf", ylim = c(-0.1, 1) * max(dnorm(

@@ -30,7 +30,7 @@ f.prob <- function(nu1 = 5, nu2 = 5, xp, mt, dig = 4) {
   print(round(prx, dig))
   y1 <- 0.1 * nxp * ymax
   wc <- ifelse(nxp > 5, 6, 5)
-  win.graph(7, wc)
+  dev.new(7, wc)
   plot(x, df(x, nu1, nu2), type = "n", main = mt, ylim = c(
     -y1,
     ymax

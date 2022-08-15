@@ -81,7 +81,7 @@ disc.cond2 <- function(tabXY, Xs, Ys, prt = TRUE, plot = FALSE, dig = 5, dig2 = 
     dc <- switch(nc, 1, 1, 2, 2, 3, 3, 3, 3, 3)
     ww <- switch(nc, 7, 7, 8, 8, 9, 9, 9, 9, 9)
     wh <- switch(nc, 3, 6, 6, 6, 6, 6, 9, 9, 9)
-    win.graph(ww, wh)
+    dev.new(ww, wh)
     par(mfrow = c(dr, dc))
     par(mar = c(3, 4, 4, 2))
     for (k in 1:nc) {

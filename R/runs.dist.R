@@ -64,7 +64,7 @@ runs.dist <-
       }
     }
     if (plot) {
-      win.graph(3.5 * nn2, 3 * nn1)
+      dev.new(3.5 * nn2, 3 * nn1)
       par(mfrow = c(nn1, nn2))
       for (k1 in n1) {
         for (k2 in n2) {

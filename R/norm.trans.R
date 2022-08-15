@@ -45,7 +45,7 @@ norm.trans <- function(mu, sig, a, b, mt1, mt0, dig = 4, span = 3, np = 100) {
   if (missing(mt0)) {
     mt0 <- bquote(N(mu == 0, sigma^2 == 1))
   }
-  win.graph(7, 6)
+  dev.new(7, 6)
   par(mfrow = c(2, 1))
   par(mar = c(3, 4, 3, 1))
   plot(x1, fx[, 2], type = "n", main = mt1, ylim = c(

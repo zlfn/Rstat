@@ -66,7 +66,7 @@ bntest2.plot <- function(x, n, p0, alp = 0.05, side = "two", dig = 4) {
   x2 <- min(n, ceiling(n * p0 + 4 * se))
   xa <- x1:x2
   ymax <- dbinom(n * p0, n, p0) * 1.1
-  win.graph(7, 5)
+  dev.new(7, 5)
   plot(xa, dbinom(xa, n, p0),
     type = "h", lwd = 5, col = grey(0.7),
     ylim = c(0, ymax), main = paste0(

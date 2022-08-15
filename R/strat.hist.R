@@ -47,7 +47,7 @@ strat.hist <-
     if (missing(vc)) {
       vc <- c("orange", rep("cyan", ng))
     }
-    win.graph(w, h)
+    dev.new(w, h)
     par(mfrow = c(nr, nc))
     par(mar = c(3, 3, 4, 1))
     xh <- hist(xd,

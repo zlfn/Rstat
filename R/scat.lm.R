@@ -29,7 +29,7 @@ scat.lm <-
     if (missing(mt)) {
       mt <- paste(xl, ":", yl, "scatter plot")
     }
-    win.graph(w[1], w[2])
+    dev.new(w[1], w[2])
     plot(x, y,
       main = mt, xlab = xl, ylab = yl, pch = 19, cex = 1.2,
       ...

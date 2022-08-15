@@ -71,7 +71,7 @@ anova2 <- function(y, f1, f2, xl1, xl2, yl, step = 0:7, alp = 0.05, inter = TRUE
       "[Step 1] Interaction Plot of", yl, "for each combination of",
       xl1, "&", xl2
     ), "---------\n")
-    win.graph(7, 5)
+    dev.new(7, 5)
     interaction.plot(af1, af2, y,
       type = "b", col = dcol[1:m2],
       lwd = 2, leg.bg = "white", leg.bty = "o",
@@ -126,7 +126,7 @@ anova2 <- function(y, f1, f2, xl1, xl2, yl, step = 0:7, alp = 0.05, inter = TRUE
       "[Step 3] ANOVA Diagnostic plot of ",
       yl, " w.r.t. ", xl1, " & ", xl2
     ), "---------\n")
-    win.graph(7, 4)
+    dev.new(7, 4)
     par(mfrow = c(1, 2))
     plot(an2, which = 1:2)
   }
@@ -193,7 +193,7 @@ anova2 <- function(y, f1, f2, xl1, xl2, yl, step = 0:7, alp = 0.05, inter = TRUE
       "[Step 5] ", (1 - alp) * 100, "% CI for the Mean of ",
       yl, " w.r.t. ", xl1, " & ", xl2
     ), "---------\n")
-    win.graph(7, 5)
+    dev.new(7, 5)
     lev <- 1:m1
     x1 <- 0.5
     x2 <- m1 + 0.5
@@ -276,7 +276,7 @@ anova2 <- function(y, f1, f2, xl1, xl2, yl, step = 0:7, alp = 0.05, inter = TRUE
     n2 <- length(ye2)
     y1 <- min(lcl2) - 0.1 * (max(ucl2) - min(lcl2))
     y2 <- max(ucl2) + 0.05 * (max(ucl2) - min(lcl2))
-    win.graph(7, 5)
+    dev.new(7, 5)
     plot(ye2,
       type = "n", xlim = c(0.5, n2 + 0.5),
       ylim = c(y1, y2), main = paste0(

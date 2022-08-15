@@ -43,7 +43,7 @@ meantest2.plot.R <- function(xb, mu0, sig, n, prng = c(-4, 4), side = "two",
     )
   }
   xa <- seq(prng[1], prng[2], length.out = 101)
-  win.graph(7, 5)
+  dev.new(7, 5)
   plot(xa, dt(xa, df),
     type = "n", xlab = "Test Statistic",
     ylab = "pdf", ylim = c(-0.1, 1) * max(dt(xa, df)),

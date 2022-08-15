@@ -29,7 +29,7 @@ rolldie.sum <- function(n, cex = 1) {
   DX <- sqrt(VX)
   Xmin <- min(X.val)
   Xmax <- max(X.val)
-  win.graph(7, 5)
+  dev.new(7, 5)
   plot(X.prob, type = "h", col = "red", main = paste0(
     "Probability Distribution of the Sum of ",
     n, " Dice"

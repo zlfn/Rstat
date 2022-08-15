@@ -33,7 +33,7 @@ ranksum.dist <-
       }
     }
     if (plot) {
-      win.graph(7, 5)
+      dev.new(7, 5)
       if (missing(n1)) {
         n1 <- 1:min(n2)
       }

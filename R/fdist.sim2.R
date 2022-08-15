@@ -41,7 +41,7 @@ fdist.sim2 <- function(sig1, sig2, n1, n2, N = 10000, ng = 300, seed = 9857,
   cdf <- rbind(Simula, Theory, Error)
   colnames(cdf) <- paste0("F(", xp, ")")
   print(round(cdf, dig))
-  win.graph(7, 5)
+  dev.new(7, 5)
   hist(fs,
     breaks = ng, prob = T, xlim = c(0, xmax), ylim = c(
       0,

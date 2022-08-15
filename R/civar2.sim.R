@@ -36,7 +36,7 @@ civar2.sim <- function(n1, n2, sig1, sig2, alp = 0.05, N = 100, seed = 9857,
     ci[i, ] <- c(lcl, xm, ucl)
   }
   if (plot) {
-    win.graph(7, 4)
+    dev.new(7, 4)
     plot(ir, ci[, 2],
       type = "p", pch = 19, cex = 0.6,
       col = 1, ylim = c(min(ci), max(ci)), main = "Confidence Intervals for Ratio of Population Variances",

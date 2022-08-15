@@ -23,7 +23,7 @@ snorm.prob <-
     ymax <- max(dnorm(x))
     nzp <- length(zp)
     y1 <- 0.11 * nzp * ymax
-    win.graph(7, 5)
+    dev.new(7, 5)
     plot(x, dnorm(x), type = "n", main = mt, ylim = c(
       -y1,
       ymax

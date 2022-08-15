@@ -48,7 +48,7 @@ cont.trans <- function(fx, TF, FTF, a, b, lo = 0, up = 1, plot = FALSE, ...) {
     dimw <- switch(N, c(7, 5), c(7, 7), c(8, 5), c(8, 7),
       c(8, 7), c(9, 7), c(9, 7), c(9, 7)
     )
-    win.graph(dimw[1], dimw[2])
+    dev.new(dimw[1], dimw[2])
     par(mfrow = divw)
     x1 <- lo - 0.2 * (up - lo)
     x2 <- up + 0.2 * (up - lo)

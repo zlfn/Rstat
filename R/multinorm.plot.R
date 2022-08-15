@@ -54,7 +54,7 @@ multinorm.plot <- function(ps, size) {
   wr <- c(1, 1, 1, 2, 2, 2, 2, 2, 3, 3)
   ww <- c(4, 6, 9, 7, 9, 9, 9, 9, 9, 9)
   wl <- c(3, 3, 3, 6, 6, 6, 6, 6, 9, 9)
-  win.graph(ww[ng], wl[ng])
+  dev.new(ww[ng], wl[ng])
   par(mfrow = c(wr[ng], wc[ng]))
   for (k in 1:ng) {
     scatterplot3d(x[[1]], x[[2]], fx6[, k],

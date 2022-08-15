@@ -28,7 +28,7 @@ tnorm.comp <- function(nu = c(10, 30), lo = -3.5, up = 3.5, dig = 4, dcol) {
       "cyan", "orange"
     )
   }
-  win.graph(7, 6)
+  dev.new(7, 6)
   par(mfrow = c(2, 1))
   par(mar = c(4, 4, 4, 2))
   plot(x, dnorm(x),

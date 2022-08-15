@@ -29,7 +29,7 @@ cont.marg2 <- function(FUN, lo1, up1, lo2, up2, xs, ys) {
   Vfy <- Vectorize(fy, "y")
   xa <- seq(lo1, up1, length = 500)
   ya <- seq(lo2, up2, length = 500)
-  win.graph(7, 6)
+  dev.new(7, 6)
   par(mfrow = c(2, 1))
   par(mar = c(3, 4, 4, 2))
   plot(xa, Vfx(xa),

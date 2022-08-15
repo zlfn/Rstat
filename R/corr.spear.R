@@ -183,7 +183,7 @@ corr.spear <- function(x, y, r0 = 0, xl, yl, mt, step = 1:2, alp = 0.05, dig = 4
         xl
       )
     }
-    win.graph(8, 4)
+    dev.new(8, 4)
     par(mfrow = c(1, 2))
     y11 <- floor(min(y, lm1$fit))
     y12 <- ceiling(max(y, lm1$fit))

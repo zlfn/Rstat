@@ -65,7 +65,7 @@ ranksum.plot <- function(x, y, side = "two", xlab = "Rank Sum statistic",
   pdf <- dwilcox(xa, n1, n2)
   ymax <- max(pdf) * 1.05
   ymin <- -0.1 * max(pdf)
-  win.graph(7, 5)
+  dev.new(7, 5)
   plot(xa, pdf,
     type = "n", xlab = xlab, ylab = "f(u)",
     ylim = c(ymin, ymax), main = paste0(

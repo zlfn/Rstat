@@ -31,7 +31,7 @@ chi.quant <- function(nu, pv, pv2 = pv, pup = 0.999, mt, dig = 4) {
   npv <- length(pv2)
   y1 <- 0.1 * npv * ymax
   wc <- ifelse(npv > 5, 6, 5)
-  win.graph(7, wc)
+  dev.new(7, wc)
   plot(x, pdf, type = "n", ylim = c(-y1, ymax), xlim = c(-0.1 *
     up, up), ylab = "f(x)", xlab = "x", main = mt)
   abline(h = 0, col = "green4")

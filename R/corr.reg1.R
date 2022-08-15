@@ -43,7 +43,7 @@ corr.reg1 <- function(x, y, r0 = 0, xl, yl, mt, step = 1:4, x0, xrng, by,
         yl
       )
     }
-    win.graph(7, 5)
+    dev.new(7, 5)
     y1 <- floor(min(y, lm1$fit))
     y2 <- ceiling(max(y, lm1$fit))
     plot(x, y,
@@ -137,13 +137,13 @@ corr.reg1 <- function(x, y, r0 = 0, xl, yl, mt, step = 1:4, x0, xrng, by,
   if (5 %in% step) {
     if (r0 == 0) {
       cat("[Step 5] T-test plot ------------------------\n")
-      win.graph(7, 5)
+      dev.new(7, 5)
       mr <- max(c(4, abs(ct$stat * 1.2)))
       ttest.plot(ct$stat, ct$para, prng = c(-mr, mr), pvout = F)
     }
     else {
       cat("[Step 5] Z-test plot ------------------------\n")
-      win.graph(7, 5)
+      dev.new(7, 5)
       mr <- max(c(4, abs(Z0 * 1.2)))
       normtest.plot(Z0,
         prng = c(-mr, mr), xlab = "Z-statistic",
@@ -153,7 +153,7 @@ corr.reg1 <- function(x, y, r0 = 0, xl, yl, mt, step = 1:4, x0, xrng, by,
   }
   if (6 %in% step) {
     cat("[Step 6] Display the simple regression line ------------------------\n")
-    win.graph(7, 5)
+    dev.new(7, 5)
     plot(x, y,
       pch = 19, main = mt, xlab = xl, ylab = yl,
       ylim = c(y1, y2)
@@ -387,7 +387,7 @@ corr.reg1 <- function(x, y, r0 = 0, xl, yl, mt, step = 1:4, x0, xrng, by,
     y2 <- max(pred2[, "upr"])
     ymin <- y1 - (y2 - y1) * 0.1
     ymax <- y2 + (y2 - y1) * 0.1
-    win.graph(7, 6)
+    dev.new(7, 6)
     plot(x, y, pch = 19, main = paste(
       "Confidence and Prediction Bands of",
       yl, "given", xl
@@ -417,7 +417,7 @@ corr.reg1 <- function(x, y, r0 = 0, xl, yl, mt, step = 1:4, x0, xrng, by,
   }
   if (12 %in% step) {
     cat("[Step 12] Diagnosis of the regression model ------------------------\n")
-    win.graph(7, 5)
+    dev.new(7, 5)
     par(mfrow = c(2, 2))
     plot(lm1)
   }

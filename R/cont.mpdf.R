@@ -95,7 +95,7 @@ cont.mpdf <- function(dist, lo, up, para, para2, ymax, mt, dcol, np = 100,
       "green4", "purple", "cyan2"
     )
   }
-  win.graph(9, 5)
+  dev.new(9, 5)
   par(mfrow = c(1, 2))
   if (missing(ymax)) {
     ymax <- max(pdf)

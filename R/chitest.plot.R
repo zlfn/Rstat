@@ -28,7 +28,7 @@ chitest.plot <- function(stat, df, prng, side = "two", mt, dig = 4, ppt = 20) {
     (.(df)))
   }
   xa <- seq(prng[1], prng[2], length = 100)
-  win.graph(7, 5)
+  dev.new(7, 5)
   plot(xa, dchisq(xa, df),
     type = "n", xlab = "Test Statistic(x)",
     ylab = "f(x)", ylim = c(-0.1, 1) * max(dchisq(

@@ -76,7 +76,7 @@ cont.spdf <- function(dist, lo, up, para, para2, ymax, xl, yl, dcol, np = 100,
   }
   nr <- switch(N, 1, 1, 2, 2, 2, 2, 3, 3, 3)
   nc <- switch(N, 1, 2, 2, 2, 3, 3, 3, 3, 3)
-  win.graph(3.5 * nc, 3 * nr)
+  dev.new(3.5 * nc, 3 * nr)
   par(mfrow = c(nr, nc))
   if (missing(ymax)) {
     ymax <- max(pdf)

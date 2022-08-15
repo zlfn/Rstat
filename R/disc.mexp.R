@@ -84,7 +84,7 @@ disc.mexp <- function(xv, fx, fx2, fx3, mt, dig = 3, del = 0.2, prt = TRUE,
     }
     nc <- switch(ng, 1, 2, 3, 2, 3, 3, 3, 3, 3)
     nr <- switch(ng, 1, 1, 1, 2, 2, 2, 3, 3, 3)
-    win.graph(3 * nc, 3 * nr)
+    dev.new(3 * nc, 3 * nr)
     par(mfrow = c(nr, nc))
     for (k in 1:ng) {
       plot(xv, fx[[k]],

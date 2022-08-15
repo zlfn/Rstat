@@ -41,7 +41,7 @@ corr.mreg <- function(xd, y, form, xd2, form2, step = 0:4, newd, pvx, xrng,
   nn <- length(y)
   if (0 %in% step) {
     cat("[Step 0] Scatter matrix plot for prior investigation of data --------------------\n")
-    win.graph(7, 5)
+    dev.new(7, 5)
     xyd <- as.data.frame(cbind(xd, y))
     names(xyd) <- c(xl, yl)
     pairs(xyd, lower.panel = panel.cor, upper.panel = function(x,
@@ -187,7 +187,7 @@ corr.mreg <- function(xd, y, form, xd2, form2, step = 0:4, newd, pvx, xrng,
     xl2 <- names(xd2)
     xd2y <- as.data.frame(cbind(xd2, y))
     names(xd2y) <- c(xl2, yl)
-    win.graph(7, 5)
+    dev.new(7, 5)
     pairs(xd2y, lower.panel = panel.cor, upper.panel = function(x,
                                                                 y) {
       points(x, y)
@@ -308,11 +308,11 @@ corr.mreg <- function(xd, y, form, xd2, form2, step = 0:4, newd, pvx, xrng,
     an12 <- anova(lm1, lm2)
     print(an12)
     cat("[Step 5-2] Diagnose regression model 1 -------------\n")
-    win.graph(7, 6)
+    dev.new(7, 6)
     par(mfrow = c(2, 2))
     plot(lm1)
     cat("[Step 5-3] Diagnose regression model 2  -------------\n")
-    win.graph(7, 6)
+    dev.new(7, 6)
     par(mfrow = c(2, 2))
     plot(lm2)
   }
@@ -350,7 +350,7 @@ corr.mreg <- function(xd, y, form, xd2, form2, step = 0:4, newd, pvx, xrng,
     y2 <- max(pred1[, "upr"])
     ymin <- y1 - (y2 - y1) * 0.1
     ymax <- y2 + (y2 - y1) * 0.1
-    win.graph(7, 6)
+    dev.new(7, 6)
     plot(xd[[pvx]], y,
       pch = 19, cex = 1.2, main = paste(
         "Confidence and Prediction Bands of ",

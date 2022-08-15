@@ -56,7 +56,7 @@ norm.spn <-
         collapse = "/"
       ), "-sigma Error Limit")
     }
-    win.graph(7, 6)
+    dev.new(7, 6)
     kv <- seq(lo, up, length = 100)
     if (log) {
       plot(kv, spn(kv, alp[1]),

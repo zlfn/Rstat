@@ -33,7 +33,7 @@ anova1 <- function(y, f, xl = "Factor", yl = "Response Variable",
       "[Step 1] Box Plot of ", yl, " for each level of ",
       xl
     ), "---------\n")
-    win.graph(7, 5)
+    dev.new(7, 5)
     boxplot(y ~ af, col = 7, main = paste0(
       "Box Plot of ",
       yl, " for each level of ", xl
@@ -76,7 +76,7 @@ anova1 <- function(y, f, xl = "Factor", yl = "Response Variable",
       "[Step 3] ANOVA Diagnostic Plot of ",
       yl, " w.r.t. ", xl
     ), "---------\n")
-    win.graph(7, 4)
+    dev.new(7, 4)
     par(mfrow = c(1, 2))
     plot(an1, which = 1:2)
   }
@@ -100,7 +100,7 @@ anova1 <- function(y, f, xl = "Factor", yl = "Response Variable",
       yl, " w.r.t. ", xl
     ), "---------\n")
     width <- 7 + min(8, max(0, m1 - 6) * 0.5)
-    win.graph(width, 5)
+    dev.new(width, 5)
     fnum <- as.numeric(af)
     lev <- 1:m1
     x1 <- 0.5
@@ -181,7 +181,7 @@ anova1 <- function(y, f, xl = "Factor", yl = "Response Variable",
     y1 <- min(lcl2) - 0.1 * (max(ucl2) - min(lcl2))
     y2 <- max(ucl2) + 0.05 * (max(ucl2) - min(lcl2))
     width <- 7 + min(8, max(0, m1 - 4))
-    win.graph(width, 5)
+    dev.new(width, 5)
     plot(ym2,
       type = "n", xlim = c(0.5, n2 + 0.5),
       ylim = c(y1, y2), main = paste0(

@@ -31,7 +31,7 @@ signrank.dist <- function(nv = 5:50, av, tab = TRUE, plot = FALSE, dig = 4) {
     nr <- switch(nn, 1, 1, 1, 2, 2, 2, 3, 3, 3)
     wc <- switch(nn, 7, 7, 9, 7, 9, 9, 9, 9, 9)
     wr <- switch(nn, 5, 4, 4, 6, 6, 6, 9, 9, 9)
-    win.graph(wc, wr)
+    dev.new(wc, wr)
     par(mfrow = c(nr, nc))
     for (n in nv) {
       mu <- n * (n + 1) / 4

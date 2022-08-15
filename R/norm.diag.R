@@ -26,7 +26,7 @@ norm.diag <-
       x2 <- max(x, xm + 3 * xs)
       xrng <- c(x1, x2)
     }
-    win.graph(8, 4)
+    dev.new(8, 4)
     par(mfrow = c(1, 2))
     hist(x,
       prob = T, breaks = seq(xrng[1], xrng[2], by = by),

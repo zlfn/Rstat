@@ -76,7 +76,7 @@ mean2test.plot <- function(xb1, xb2, s1, s2, n1, n2, d0 = 0, prng, side = "two",
       xlab <- "Difference of Sample Means"
     }
     xa <- seq(prng[1], prng[2], length.out = 100)
-    win.graph(7, 5)
+    dev.new(7, 5)
     plot(xa, dnorm(xa, d0, se),
       type = "n", xlab = xlab,
       ylab = "pdf", ylim = c(-0.1, 1) * max(dnorm(
@@ -204,7 +204,7 @@ mean2test.plot <- function(xb1, xb2, s1, s2, n1, n2, d0 = 0, prng, side = "two",
       xlab <- "Test Statistic"
     }
     xa <- seq(prng[1], prng[2], length.out = 101)
-    win.graph(7, 5)
+    dev.new(7, 5)
     plot(xa, dt(xa, df),
       type = "n", xlab = xlab, ylab = "pdf",
       ylim = c(-0.1, 1) * max(dt(xa, df)), main = mt
@@ -329,7 +329,7 @@ mean2test.plot <- function(xb1, xb2, s1, s2, n1, n2, d0 = 0, prng, side = "two",
       xlab <- "Test Statistic"
     }
     xa <- seq(prng[1], prng[2], length.out = 101)
-    win.graph(7, 5)
+    dev.new(7, 5)
     plot(xa, dt(xa, df),
       type = "n", xlab = xlab, ylab = "pdf",
       ylim = c(-0.1, 1) * max(dt(xa, df)), main = mt

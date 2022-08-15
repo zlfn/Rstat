@@ -27,7 +27,7 @@ chi.prob <- function(nu, xp, pup = 0.995, mt, dig = 4) {
   print(round(prx, dig))
   y1 <- 0.1 * nxp * ymax
   wc <- ifelse(nxp > 5, 6, 5)
-  win.graph(7, wc)
+  dev.new(7, wc)
   plot(x, dchisq(x, nu), type = "n", main = mt, ylim = c(
     -y1,
     ymax

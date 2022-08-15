@@ -46,7 +46,7 @@ tdist.sim <-
     print(round(cdf, dig))
     x1 <- -5
     x2 <- 5
-    win.graph(7, 5)
+    dev.new(7, 5)
     hist(zb,
       breaks = ng, prob = T, col = 7, xlim = c(x1, x2),
       ylab = "f(t)", xlab = "t", main = mt

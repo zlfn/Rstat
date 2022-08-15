@@ -40,7 +40,7 @@ norm.sim <-
     cdf <- rbind(Theory, Simula)
     colnames(cdf) <- paste0("F(", xp, ")")
     print(round(cdf, dig))
-    win.graph(7, 6)
+    dev.new(7, 6)
     par(mfrow = c(2, 1))
     par(mar = c(3, 4, 4, 2))
     x1 <- mu - 3 * sig

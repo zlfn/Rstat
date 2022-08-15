@@ -4,6 +4,8 @@
 - 굉장히 통계 교육에 신경을 써서 만든 패키지 같은데 이대로 방치 되버리는 상황이 아까움. :+1:
 - 구형 레거시 버전에, 엘레강스하지 못하게 설치 하는 상황이 안타까워 R 4.0 이상에서 돌아가는 Rstat 패키지를 작성함.
 
+- win.graph 대신 dev.new로 대체하여 macOS와 Linux에서도 이용할 수 있게 함
+
 <img src ='https://user-images.githubusercontent.com/6457691/81569878-d0980a00-93da-11ea-907f-0a8049a1b990.jpg' width = '400'>
 
 ## :wrench: 설치 방법 

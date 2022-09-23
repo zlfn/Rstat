@@ -15,8 +15,15 @@
 ```R
 install.packages('devtools')
 library(devtools)
-install_github('jhk0530/Rstat')
+install_github('zlfn/Rstat')
 library(Rstat)
+```
+
+Linux에서는 아래의 것들을 모두 설치해야 함(Debian 계열)
+
+```bash
+
+sudo apt install libfontconfig1-dev libgit2-dev libharfbuzz-dev libfribidi-dev libtiff-dev
 ```
 
 ## :star: 설치 확인

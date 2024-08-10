@@ -5,6 +5,7 @@
 - 구형 레거시 버전에, 엘레강스하지 못하게 설치 하는 상황이 안타까워 R 4.0 이상에서 돌아가는 Rstat 패키지를 작성함.
 
 - win.graph 대신 dev.new로 대체하여 macOS와 Linux에서도 이용할 수 있게 함
+- 이 레포지토리의 원본은 https://github.com/tjssu/Rstat 입니다.
 
 <img src ='https://user-images.githubusercontent.com/6457691/81569878-d0980a00-93da-11ea-907f-0a8049a1b990.jpg' width = '400'>
 
@@ -30,7 +31,7 @@ strat.hist()
 
 
 ## :blush: Authors
-* :octocat: T.J. Lim (tjlim@ssu.ac.kr)
+* :octocat: T.J. Lim (tjlim@ssu.ac.kr) [@tjssu](https://github.com/tjssu)
 * :octocat: Jinhwan Kim [@jhk0530](http://github.com/jhk0530)
 * :octocat: ChanUng Park [@zlfn](https://github.com/zlfn)
 

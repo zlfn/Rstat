@@ -15,7 +15,7 @@
 ```R
 install.packages('devtools')
 library(devtools)
-install_github('jhk0530/Rstat')
+install_github('zlfn/Rstat')
 library(Rstat)
 ```
 
@@ -31,7 +31,8 @@ strat.hist()
 
 ## :blush: Authors
 * :octocat: T.J. Lim (tjlim@ssu.ac.kr)
-* :octocat: Jinhwan Kim [@jhk0530](http://github.com/jhk0530) 
+* :octocat: Jinhwan Kim [@jhk0530](http://github.com/jhk0530)
+* :octocat: ChanUng Park [@zlfn](https://github.com/zlfn)
 
 ## :memo: License
 This project is [MIT](https://opensource.org/licenses/MIT) licensed
@@ -39,4 +40,6 @@ This project is [MIT](https://opensource.org/licenses/MIT) licensed
 *This README was generated with :two_hearts: by [shinyReadme](http://github.com/jhk0530/shinyReadme)*
 
 ## Rstat 패키지 혹은 기타 R 관련 문의 
-:email: hwanistic@gmail.com
+:email: hwanistic@gmail.com  
+### 수정된 Rstat 패키지 관련 문의
+:email: ung@zlfn.space
